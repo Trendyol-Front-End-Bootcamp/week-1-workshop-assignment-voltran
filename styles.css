@@ -178,7 +178,7 @@ header{
 .account-list li:hover .user-menu {
     display: block;
     position: absolute;
-    top: 18px;
+    top: 16px;
     left: -60px;
     
 }
@@ -221,7 +221,22 @@ header{
     font-weight: 600;
     font-size: 14px;
     line-height: 18px;
-    
+}
+
+.nav{
+    position: relative;
+}
+
+
+
+.tablink-dropdown{
+    margin-top: 14px;
+    display: block;
+    position: absolute;
+    width: 1080px;
+    height: 335px;
+    box-shadow: 0px 3px 10px rgba(0, 0, 0, 0.1);
+    background: gray;
     
 }
 /* ------------------------------------------------- */
