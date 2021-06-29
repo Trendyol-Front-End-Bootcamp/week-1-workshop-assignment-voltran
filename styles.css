@@ -16,6 +16,7 @@ body {
 
 a {
     text-decoration: none;
+
 }
 
 ul {
@@ -206,16 +207,16 @@ header{
     
 }
 .nav .main-nav:first-child{
-    padding-left: 0 !important;
+    padding-left: 0 ;
     
 }
 .nav .main-nav .tablink:hover{
     border-bottom: 2px solid var(--primary-color);
 }
-.nav .main-nav .tablink:hover a{
+.nav .main-nav .tablink:hover .category{
     color: var(--primary-color);
 }
-.nav .main-nav .tablink a{
+.nav .main-nav .tablink .category{
     letter-spacing: 0.18px;
     color: var(--account-link-color); 
     text-transform: uppercase;
@@ -225,38 +226,75 @@ header{
     font-size: 14px;
     line-height: 18px;
 }
-
 .nav{
     position: relative;
 }
 .main-nav .tablink:hover .tablink-dropdown{
     display: block;
 }
-
+/* Main Nav DropDown */
 .tablink-dropdown{
     margin-top: 14px;
     display: none;
     position: absolute;
     width: 1080px;
-    height: 335px;
+    height: 340px;
     box-shadow: 0px 3px 10px rgba(0, 0, 0, 0.1);
-    background: gray;
+    background: #fff;
     top: 19px;
     left: 0;
+    padding-top: 30px;
+    padding-bottom: 10px;
 }
 .tablink-dropdown-category-container{
     display: flex;
     flex-direction: row;
-    gap: 20px;
-    
+    gap: 10px;
 }
-.tablink-dropdown-category-container .tablink-dropdown-category{
+.tablink-dropdown-category{
     display: flex;
     flex-direction: column;
     gap: 20px;
     text-align: start;
-
 }
+.tablink-dropdown-category ul {
+   padding-left: 20px;
+}
+.tablink-dropdown-category ul li {
+    font-size: 13px ;   
+}
+.tablink-dropdown-category ul li:not(:first-child) a{
+    color: #666 ;
+}
+.tablink-dropdown-category ul li:hover a{
+   border-bottom:0.3px solid var(--primary-color) ;
+   color: var(--primary-color) ;
+}
+
+.category-title {
+    font-size: 16px;
+    color: var(--account-link-color)  ;
+    
+}
+.category-title:hover{
+    
+    color: var(--primary-color)  ;
+    
+}
+
+
+.tablink-dropdown-category-card {
+    height: 120px;
+    width: 300px;
+    background-color: gray;
+}
+.tablink-dropdown-category-card a img {
+    height: 120px;
+    width: 300px;
+}
+
+
+
 /* ------------------------------------------------- */
 /* Circles */
 .circles{
