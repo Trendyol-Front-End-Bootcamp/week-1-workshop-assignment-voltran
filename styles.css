@@ -314,12 +314,15 @@ header{
 /* ------------------------------------------------- */
 /* Circles */
 .circles {
-  display: flex;
-  justify-content: space-between;
-  height: 110px;
-  font-size: 12px;
-  text-align: center;
-  line-height: 15.08px;
+    display: flex;
+    justify-content: center;
+    gap: 26.11px;
+    height: 110px;
+    font-size: 12px;
+    text-align: center;
+    line-height: 15.08px;
+    margin: 0 auto;
+    margin-top: 28px;
 }
 .circles .circle {
   display: flex;
