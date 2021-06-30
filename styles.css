@@ -2,6 +2,12 @@
     --primary-color: #F27A1A;
     --account-link-color: #333;
     --account-link-hover-color: var(--primary-color);
+    --paragraph-font:  'Source Sans Pro', sans-serif;
+}
+
+h4 {
+    padding: 0;
+    margin: 0;
 }
 
 html,
@@ -22,12 +28,34 @@ ul {
     list-style: none;
 }
 
+.top-banner {
+    display: block;
+    width: 100%;
+    margin: 0;
+}
+
+.top-banner > img {
+    width: inherit;
+    height: 96px;
+}
+
 .container {
+    /* width: 1080px; */
+    margin: 0 auto;
+}
+main {
+    border-top: 1px solid #e8e8e8;
+    width: 100%;
+    margin: 0;
+}
+.page-content {
     width: 1080px;
     margin: 0 auto;
 }
 header{
-    margin-bottom: 30px;
+    /* margin-bottom: 30px; */
+    width: 1080px;
+    margin: 0 auto;
 }
 
 .header-links {
@@ -162,7 +190,7 @@ header{
     box-shadow: 0px 3px 10px rgba(0, 0, 0, 0.07);
     font-size: 14px;
     line-height: 18px;
-
+    z-index: 9999999999;
 }
 .user-menu li {
    margin-bottom: 12px;
@@ -185,8 +213,10 @@ header{
 
 /*Category Navbar*/
 .nav{
-    border-bottom: 1px solid #e8e8e8;
+    /* border-bottom: 1px solid #e8e8e8; */
     height: 34px;
+    width: 1080px;
+    margin: 0 auto;
 }
 .nav .main-nav{
     display: flex;
