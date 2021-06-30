@@ -258,8 +258,35 @@ ul {
 }
 
 .price__range > input[type="radio"] {
-    background-color: var(--primary-color);
+    box-sizing: border-box;
+}
+
+.price__range > input[type="radio"]:after {
+
+    width: 20px;
+    height: 20px;
+    border-radius: 20px;
+    position: relative;
+    content: '';
     display: inline-block;
+    visibility: visible;
+
+}
+
+.price__range > input[type='radio']:checked:after {
+    width: 14px;
+    height: 14px;
+    border-radius: 20px;
+    position: relative;
+    top: 8.5%;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: #ffa500;
+    content: '';
+    display: inline-block;
+    vertical-align: middle;
+    visibility: visible;
+
 }
 
 .price__range > * {
@@ -291,6 +318,10 @@ ul {
     align-items: center;
     margin: 0;
     padding: 4px;
+}
+
+.filters__price--search:hover {
+    background-color: var(--primary-color);
 }
 
 
@@ -360,7 +391,13 @@ ul {
     left: 78%;
     top: 2%;
     z-index: 10000000;
+    transition: .1s all;
 }
+.product-add-fav:hover svg path {
+    fill: var(--primary-color);
+    stroke: none;
+}
+
 .product-add-fav svg {
     position: absolute;
     top: 50%;

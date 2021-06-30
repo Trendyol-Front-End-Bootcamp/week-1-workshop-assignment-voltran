@@ -28,12 +28,34 @@ ul {
     list-style: none;
 }
 
+.top-banner {
+    display: block;
+    width: 100%;
+    margin: 0;
+}
+
+.top-banner > img {
+    width: inherit;
+    height: 96px;
+}
+
 .container {
+    /* width: 1080px; */
+    margin: 0 auto;
+}
+main {
+    border-top: 1px solid #e8e8e8;
+    width: 100%;
+    margin: 0;
+}
+.page-content {
     width: 1080px;
     margin: 0 auto;
 }
 header{
-    margin-bottom: 30px;
+    /* margin-bottom: 30px; */
+    width: 1080px;
+    margin: 0 auto;
 }
 
 .header-links {
@@ -191,8 +213,10 @@ header{
 
 /*Category Navbar*/
 .nav{
-    border-bottom: 1px solid #e8e8e8;
+    /* border-bottom: 1px solid #e8e8e8; */
     height: 34px;
+    width: 1080px;
+    margin: 0 auto;
 }
 .nav .main-nav{
     display: flex;
