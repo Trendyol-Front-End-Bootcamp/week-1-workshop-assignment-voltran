@@ -7,7 +7,7 @@ body {
     -moz-osx-font-smoothing: grayscale;
     text-rendering: optimizeLegibility;
 }
-.page-products-root {
+.products-page-content {
     width: 1200px;
     margin: 0 auto;
 }
@@ -36,7 +36,7 @@ ul {
 }
 
 .breadcrumb {
-    margin: 20px 0;
+    margin: 20px ;
     display: flex;
     align-items: center;
     width: 20%;
@@ -184,25 +184,21 @@ ul {
 }
 
 
-
-/* width */
+/* Custom Brand Scroll Style */
 .filters-brand__list::-webkit-scrollbar {
     width: 10px;
   }
 
-/* Track */
 .filters-brand__list::-webkit-scrollbar-track {
     background: #f1f1f1;
     border-radius: 10px;
 }
 
-/* Handle */
 .filters-brand__list::-webkit-scrollbar-thumb {
     background: #888;
     border-radius: 10px;
 }
 
-/* Handle on hover */
 .filters-brand__list::-webkit-scrollbar-thumb:hover {
     background: #555;
 }
@@ -220,10 +216,6 @@ ul {
     font-size: 13px;
     line-height: 16.34px;
     padding-left: 5px;
-}
-
-.brand>input[type="checkbox"] {
-
 }
 
 .filters__price {
@@ -267,7 +259,6 @@ ul {
 }
 
 .price__range > input[type="radio"]:after {
-
     width: 20px;
     height: 20px;
     border-radius: 20px;
@@ -275,9 +266,9 @@ ul {
     content: '';
     display: inline-block;
     visibility: visible;
-
 }
 
+/* Hocam burayi okumasak olur mu :D */
 .price__range > input[type='radio']:checked:after {
     width: 14px;
     height: 14px;
@@ -291,7 +282,6 @@ ul {
     display: inline-block;
     vertical-align: middle;
     visibility: visible;
-
 }
 
 .price__range > * {
@@ -337,7 +327,7 @@ ul {
 }
 /* End of Categories */
 
-/* Start of Products */
+/* Start of Product List */
 .product-listing {
     display: flex;
     flex-direction: row;
@@ -346,7 +336,7 @@ ul {
     column-gap: 20px;
     margin-bottom: 50px;
 }
-
+/* Product Card */
 .product-card {
     cursor: pointer;
     display: flex;
@@ -372,6 +362,13 @@ ul {
     background-color: #C4C4C4;
 }
 
+.product-image {
+    overflow: hidden;
+}
+
+.product-card img {
+    transition: transform 0.35s;
+}
 
 .product-card:hover img {
     object-fit: contain;
@@ -396,9 +393,8 @@ ul {
     box-shadow: 0px 1px 4px rgba(0, 0, 0, 0.25);
     left: 78%;
     top: 2%;
-    z-index: 10000000;
+    z-index: var(--z-fav-btn);
     transition: .1s all;
-    z-index: 100;
 }
 .product-add-fav:hover svg path {
     fill: var(--primary-color);
@@ -454,7 +450,7 @@ ul {
     color: var(--primary-color);
     font-weight: bold;
 }
-/* End of Products */
+/* End of Product List */
 
 .product-description-part{
     display: flex;
@@ -514,10 +510,4 @@ ul {
     border-radius: 3px;
   }
 
-.product-image {
-    overflow: hidden;
-}
 
-.product-card img {
-    transition: transform 0.35s;
-}
