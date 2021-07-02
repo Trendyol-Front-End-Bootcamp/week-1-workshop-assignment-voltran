@@ -355,7 +355,7 @@ ul {
 }
 
 .product-card:hover img {
-    object-fit: contain;
+    object-fit:cover;
     transform: scale(1.05);
 }
 
@@ -366,6 +366,11 @@ ul {
     height: inherit;
     padding: 0;
     margin: 0;
+    filter: none; 
+    -webkit-filter: blur(0px); 
+    -moz-filter: blur(0px); 
+    -ms-filter: blur(0px);
+    filter:progid:DXImageTransform.Microsoft.Blur(PixelRadius='0');
 }
 
 .product-add-fav {
