@@ -310,6 +310,7 @@ main {
   padding-top: 30px;
   padding-bottom: 10px;
   z-index: var(--z-dropdown);
+  animation: slide-in-from-top .2s ease-out;
 }
 .nav-link-dropdown-categories {
   display: flex;
@@ -470,3 +471,15 @@ main {
 }
 /*             MAİN CARDS END                */
 /* ----------------------------------------- */
+
+/* Keyframes START    */
+
+@keyframes slide-in-from-top {
+  from {
+    transform: translateX(-100%);
+  }
+
+  to {
+    transform: translateX(0%);
+  }
+}
