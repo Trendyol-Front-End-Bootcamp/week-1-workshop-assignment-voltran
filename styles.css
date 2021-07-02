@@ -240,6 +240,10 @@ header {
   position: relative;
 }
 
+main {
+  transition: .2s all;
+}
+
 .nav:hover > #black-out {
   display: block;
 }
@@ -254,7 +258,7 @@ header {
   width: 100%;
   height: 100%;
   position: absolute;
-  background-color: #000;
+  background-color: rgba(0,0,0,0.1);
   opacity: 0.5;
 }
 
