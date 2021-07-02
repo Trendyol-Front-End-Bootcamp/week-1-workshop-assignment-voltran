@@ -1,13 +1,16 @@
 :root {
-  /* THEME HEXCODES */
-  --primary-color: #f27a1a;
-  --account-link-color: #333;
-  --account-link-hover-color: var(--primary-color);
-  --paragraph-font: "Source Sans Pro", sans-serif;
-  /* Z-INDEX VALUES */
-  --z-modal: 1000;
-  --z-dropdown: 100;
-  --z-fav-btn: 10;
+    /* THEME HEXCODES */
+    --primary-color: #f27a1a;
+    --account-link-color: #333;
+    --account-link-hover-color: var(--primary-color);
+    --paragraph-font: "Source Sans Pro", sans-serif;
+    /* Z-INDEX VALUES */
+    --z-modal: 1000;
+    --z-dropdown: 100;
+    --z-fav-btn: 10;
+    /* CONSTANT FIELD VALUES */
+    --input-height: 20px;
+    --input-width: 20px;
 }
 
 html,
