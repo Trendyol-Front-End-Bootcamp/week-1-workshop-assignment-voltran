@@ -310,7 +310,7 @@ main {
   padding-top: 30px;
   padding-bottom: 10px;
   z-index: var(--z-dropdown);
-  animation: slide-in-width-from-top .2s ease-out;
+  animation: slide-in-from-top .1s ease-out;
 }
 .nav-link-dropdown-categories {
   display: flex;
@@ -487,20 +487,12 @@ main {
 
 @keyframes slide-in-from-top {
   from {
-    transform: translateX(-100%);
-  }
-
-  to {
-    transform: translateX(0%);
-  }
-}
-
-@keyframes slide-in-width-from-top {
-  from {
     height: 0px;
+    opacity: 0;
   }
 
   to {
     height: 340px;
+    opacity: 1;
   }
 }
