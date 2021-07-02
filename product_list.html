@@ -397,166 +397,184 @@
                 </li>
             </ul>
         </div>
+        <!-- Product page content starts here -->
         <main>
             <div class="products-page-content">
                 <div class="breadcrumb">
-                    <span class="breadcrumb--item">Anasayfa</span>
-                    <svg class="breadcrumb--seperator" width="7" height="12" viewBox="0 0 7 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <span class="breadcrumb-item">Anasayfa</span>
+                    <svg class="breadcrumb-seperator" width="7" height="12" viewBox="0 0 7 12" fill="none" xmlns="http://www.w3.org/2000/svg">
                         <path fill-rule="evenodd" clip-rule="evenodd" d="M4.89284 5.97711L1.1733 1.85313C0.997273 1.65796 0.997273 1.34154 1.1733 1.14637C1.34932 0.951209 1.63472 0.951209 1.81075 1.14637L5.84377 5.61789C5.87996 5.65801 5.9087 5.70328 5.93001 5.75155C6.0349 5.9126 6.02196 6.13875 5.89119 6.28373L1.7463 10.8793C1.60117 11.0402 1.36591 11.0402 1.22078 10.8793L1.10885 10.7553C0.963718 10.5944 0.963718 10.3335 1.10885 10.1726L4.89284 5.97711Z" fill="#FF671D" stroke="#FF671D"/>
                     </svg>
-                    <span class="breadcrumb--item">Kadın</span>
-                    <svg class="breadcrumb--seperator" width="7" height="12" viewBox="0 0 7 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <span class="breadcrumb-item">Kadın</span>
+                    <svg class="breadcrumb-seperator" width="7" height="12" viewBox="0 0 7 12" fill="none" xmlns="http://www.w3.org/2000/svg">
                         <path fill-rule="evenodd" clip-rule="evenodd" d="M4.89284 5.97711L1.1733 1.85313C0.997273 1.65796 0.997273 1.34154 1.1733 1.14637C1.34932 0.951209 1.63472 0.951209 1.81075 1.14637L5.84377 5.61789C5.87996 5.65801 5.9087 5.70328 5.93001 5.75155C6.0349 5.9126 6.02196 6.13875 5.89119 6.28373L1.7463 10.8793C1.60117 11.0402 1.36591 11.0402 1.22078 10.8793L1.10885 10.7553C0.963718 10.5944 0.963718 10.3335 1.10885 10.1726L4.89284 5.97711Z" fill="#FF671D" stroke="#FF671D"/>
                     </svg>  
-                    <span class="breadcrumb--item">Giyim</span>
+                    <span class="breadcrumb-item">Giyim</span>
                 </div>
+                <!-- Search results will be listed in this product-container class -->
                 <div class="product-container">
-                    <div class="product-container__filters">
-                        <div class="filters__categories filters-aside-horizontal-rule">
-                            <h4>Ilgili Kategoriler</h4>
-                            <a href="#" class="category-link">T-Shirt</a>
-                            <a href="#" class="category-link">Elbise</a>
-                            <a href="#" class="category-link">Bluz&Tuik&Büstiyer</a>
-                            <a href="#" class="category-link">Jeans</a>
-                            <a href="#" class="category-link">Gömlek</a>
-                            <a href="#" class="category-link category-link--primary force-bold">Daha Fazla Göster</a>
+                    <!-- Search result filters -->
+                    <div class="product-container-filters">
+                        <!-- Category filters will be listed in this div -->
+                        <h4>Ilgili Kategoriler</h4>
+                        <a href="#" class="category-link">T-Shirt</a>
+                        <a href="#" class="category-link">Elbise</a>
+                        <a href="#" class="category-link">Bluz&Tuik&Büstiyer</a>
+                        <a href="#" class="category-link">Jeans</a>
+                        <a href="#" class="category-link">Gömlek</a>
+                        <a href="#" class="category-link category-link-primary force-bold">Daha Fazla Göster</a>
+                        <span class="filters-aside-horizontal-rule"></span>
+                        <!-- Category filters end -->
+                        <!-- Product filters will be listed here -->
+                        <div class="opportunity-product-filters filters-aside-horizontal-rule">
+                            <h4 id="opportunity-product-header">Fırsat Ürünleri</h4>
+                            <ul>
+                                <li class="opportunity-product">
+                                    <input type="checkbox" name="four-star" id="four-star" class="checkbox-after-element">
+                                    <label for="four-star">4 Yıldızlı Fırsat Ürünleri</label>
+                                </li>
+                                <li class="opportunity-product">
+                                    <input type="checkbox" name="three-star" id="three-star" class="checkbox-after-element">
+                                    <label for="three-star">3 Yıldızlı Fırsat Ürünleri</label>
+                                </li>
+                                <li class="opportunity-product">
+                                    <input type="checkbox" name="two-star" id="two-star" class="checkbox-after-element">
+                                    <label for="two-star">2 Yıldızlı Fırsat Ürünleri</label>
+                                </li>
+                            </ul>
                         </div>
-                        <div class="filters__sale-items filters-aside-horizontal-rule">
-                            <div class="filters__sales">
-                                <h4 id="filters__sales-header">Fırsat Ürünleri</h4>
-                                <ul class="filters-sales__list">
-                                    <li class="sales">
-                                        <input type="checkbox" name="four-star" id="four-star" class="checkbox-after-element">
-                                        <label for="four-star">4 Yıldızlı Fırsat Ürünleri</label>
-                                    </li>
-                                    <li class="sales">
-                                        <input type="checkbox" name="three-star" id="three-star" class="checkbox-after-element">
-                                        <label for="three-star">3 Yıldızlı Fırsat Ürünleri</label>
-                                    </li>
-                                    <li class="sales">
-                                        <input type="checkbox" name="two-star" id="two-star" class="checkbox-after-element">
-                                        <label for="two-star">2 Yıldızlı Fırsat Ürünleri</label>
-                                    </li>
-                                </ul>
-                            </div>
+                        <!-- Product filters end -->
+
+                        <!-- Brand filters will be listed here -->
+                        <div class="brand-filters filters-aside-horizontal-rule">
+                            <h4 id="brand-filters-header">Marka</h4>
+                            <input type="search" name="" class="input-highlight" id="search-brand"  placeholder="Marka Ara">
+                            <ul class="brand-filters-list">
+                                <li class="brand">
+                                    <input type="checkbox" name="trendyolmilla" id="trendyolmilla" class="checkbox-after-element">
+                                    <label for="trendyolmilla">TRENDYOLMİLLA</label>
+                                </li>
+                                <li class="brand">
+                                    <input type="checkbox" name="koton" id="koton" class="checkbox-after-element">
+                                    <label for="koton">Koton</label>
+                                </li>
+                                <li class="brand">
+                                    <input type="checkbox" name="defacto" id="defacto" class="checkbox-after-element">
+                                    <label for="defacto">Defacto</label>
+                                </li>
+                                <li class="brand">
+                                    <input type="checkbox" name="addax" id="addax" class="checkbox-after-element">
+                                    <label for="addax">Addax</label>
+                                </li>
+                                <li class="brand">
+                                    <input type="checkbox" name="happiness-ist" id="happiness-ist" class="checkbox-after-element">
+                                    <label for="happiness-ist">Happiness İst.</label>
+                                </li>
+                                <li class="brand">
+                                    <input type="checkbox" name="olalook" id="olalook" class="checkbox-after-element">
+                                    <label for="olalook">Olalook</label>
+                                </li>
+                                <li class="brand">
+                                    <input type="checkbox" name="trend-alacati" id="trend-alacati" class="checkbox-after-element">
+                                    <label for="trend-alacati">Trend Alaçatı Stili</label>
+                                </li>
+                                <li class="brand">
+                                    <input type="checkbox" name="koton" id="koton" class="checkbox-after-element">
+                                    <label for="koton">Koton</label>
+                                </li>
+                                <li class="brand">
+                                    <input type="checkbox" name="defacto" id="defacto" class="checkbox-after-element">
+                                    <label for="defacto">Defacto</label>
+                                </li>
+                                <li class="brand">
+                                    <input type="checkbox" name="addax" id="addax" class="checkbox-after-element">
+                                    <label for="addax">Addax</label>
+                                </li>
+                                <li class="brand">
+                                    <input type="checkbox" name="happiness-ist" id="happiness-ist" class="checkbox-after-element">
+                                    <label for="happiness-ist">Happiness İst.</label>
+                                </li>
+                                <li class="brand">
+                                    <input type="checkbox" name="olalook" id="olalook" class="checkbox-after-element">
+                                    <label for="olalook">Olalook</label>
+                                </li>
+                                <li class="brand">
+                                    <input type="checkbox" name="trend-alacati" id="trend-alacati" class="checkbox-after-element">
+                                    <label for="trend-alacati">Trend Alaçatı Stili</label>
+                                </li>
+                            </ul>
                         </div>
-                        <div class="filters__brands filters-aside-horizontal-rule">
-                            <div class="filters__brands">
-                                <h4 id="filters-brand-header">Marka</h4>
-                                <input type="search" name="" id="search-brand" placeholder="Marka Ara">
-                                <ul class="filters-brand__list">
-                                    <li class="brand">
-                                        <input type="checkbox" name="trendyolmilla" id="trendyolmilla" class="checkbox-after-element">
-                                        <label for="trendyolmilla">TRENDYOLMİLLA</label>
-                                    </li>
-                                    <li class="brand">
-                                        <input type="checkbox" name="koton" id="koton" class="checkbox-after-element">
-                                        <label for="koton">Koton</label>
-                                    </li>
-                                    <li class="brand">
-                                        <input type="checkbox" name="defacto" id="defacto" class="checkbox-after-element">
-                                        <label for="defacto">Defacto</label>
-                                    </li>
-                                    <li class="brand">
-                                        <input type="checkbox" name="addax" id="addax" class="checkbox-after-element">
-                                        <label for="addax">Addax</label>
-                                    </li>
-                                    <li class="brand">
-                                        <input type="checkbox" name="happiness-ist" id="happiness-ist" class="checkbox-after-element">
-                                        <label for="happiness-ist">Happiness İst.</label>
-                                    </li>
-                                    <li class="brand">
-                                        <input type="checkbox" name="olalook" id="olalook" class="checkbox-after-element">
-                                        <label for="olalook">Olalook</label>
-                                    </li>
-                                    <li class="brand">
-                                        <input type="checkbox" name="trend-alacati" id="trend-alacati" class="checkbox-after-element">
-                                        <label for="trend-alacati">Trend Alaçatı Stili</label>
-                                    </li>
-                                    <li class="brand">
-                                        <input type="checkbox" name="koton" id="koton" class="checkbox-after-element">
-                                        <label for="koton">Koton</label>
-                                    </li>
-                                    <li class="brand">
-                                        <input type="checkbox" name="defacto" id="defacto" class="checkbox-after-element">
-                                        <label for="defacto">Defacto</label>
-                                    </li>
-                                    <li class="brand">
-                                        <input type="checkbox" name="addax" id="addax" class="checkbox-after-element">
-                                        <label for="addax">Addax</label>
-                                    </li>
-                                    <li class="brand">
-                                        <input type="checkbox" name="happiness-ist" id="happiness-ist" class="checkbox-after-element">
-                                        <label for="happiness-ist">Happiness İst.</label>
-                                    </li>
-                                    <li class="brand">
-                                        <input type="checkbox" name="olalook" id="olalook" class="checkbox-after-element">
-                                        <label for="olalook">Olalook</label>
-                                    </li>
-                                    <li class="brand">
-                                        <input type="checkbox" name="trend-alacati" id="trend-alacati" class="checkbox-after-element">
-                                        <label for="trend-alacati">Trend Alaçatı Stili</label>
-                                    </li>
-                                </ul>
-                            </div>
-                        </div>
-                        <div class="filters__price">
-                            <div class="filters__price--minmax">
-                                <input class="filters__price--range" name="minPrice" id="minPrice" placeholder="En Az"/>
+                        <!-- Brand filters end -->
+
+                        <!-- Price filters will be listed here -->
+                        <div class="price-filters">
+                            <div class="price-filters-input">
+                                <input class="price-filters-value input-highlight" name="minPrice" id="minPrice" placeholder="En Az"/>
                                 <span class="price-division">&minus;</span>
-                                <input class="filters__price--range" name="minPrice" id="maxPrice" placeholder="En Çok"/>
-                                <a href="#" role="button" class="filters__price--search">
+                                <input class="price-filters-value input-highlight" name="minPrice" id="maxPrice" placeholder="En Çok"/>
+                                <a href="#" role="button" class="price-filters-search">
                                     <svg width="24" height="24" viewBox="0 0 19 19" fill="none" xmlns="http://www.w3.org/2000/svg">
                                         <path d="M18.7109 17.306L14.027 12.603C15.2255 11.2393 15.8879 9.48658 15.8909 7.671C15.8909 3.441 12.327 0 7.94597 0C3.56499 0 0 3.441 0 7.671C0 11.901 3.56499 15.342 7.94597 15.342C9.56845 15.3483 11.155 14.8645 12.498 13.954L17.2179 18.694C17.4149 18.891 17.6799 19 17.9639 19C18.2339 19 18.4889 18.9 18.6819 18.72C18.7796 18.6308 18.8581 18.5227 18.9127 18.4023C18.9673 18.2819 18.9969 18.1516 18.9997 18.0194C19.0025 17.8872 18.9785 17.7558 18.929 17.6332C18.8795 17.5106 18.8057 17.3993 18.7119 17.306H18.7109ZM7.94597 2.001C11.184 2.001 13.819 4.545 13.819 7.671C13.819 10.798 11.184 13.341 7.94597 13.341C4.70698 13.341 2.07299 10.798 2.07299 7.671C2.07299 4.545 4.70698 2.001 7.94597 2.001Z" fill="white"/>
                                     </svg>    
                                 </a>
                             </div>
-                            <div class="filters__price__ranges filters-aside-horizontal-rule">
-                                <div class="price__range">
+                            <div class="price-filters-range-group filters-aside-horizontal-rule">
+                                <div class="price-range">
                                     <input type="radio" id="zero-to-fifty" name="price-range"/>
                                     <label for="zero-to-fifty">0 TL - 50 TL</label>
                                 </div>
-                                <div class="price__range">
+                                <div class="price-range">
                                     <input type="radio" id="fifty-to-seventy" name="price-range"/>
                                     <label for="fifty-to-seventy">50 TL - 70 TL</label>
                                 </div>
-                                <div class="price__range">
+                                <div class="price-range">
                                     <input type="radio" id="seventy-to-eighty" name="price-range"/>
                                     <label for="seventy-to-eighty">70 TL - 80 TL</label>
                                 </div>
-                                <div class="price__range">
-                                    <input type="radio" id="eighty-to-ninty" name="price-range"/>
-                                    <label for="eighty-to-ninty">80 TL - 90 TL</label>
+                                <div class="price-range">
+                                    <input type="radio" id="eighty-to-ninety" name="price-range"/>
+                                    <label for="eighty-to-ninety">80 TL - 90 TL</label>
                                 </div>
-                                <div class="price__range">
+                                <div class="price-range">
                                     <input type="radio" id="ninety-to-125" name="price-range"/>
                                     <label for="ninety-to-125">90 TL - 125 TL</label>
                                 </div>
-                                <div class="price__range">
+                                <div class="price-range">
                                     <input type="radio" id="125-to-four-thousand" name="price-range"/>
                                     <label for="125-to-four-thousand">125TL - 4000 TL</label>
                                 </div>
                             </div>
                         </div>
-    
-                        <div class="filters-cargo">
+                        <!-- Price filters end -->
+
+                        <!-- Cargo filters will be listed here -->
+                        <div class="cargo-filters">
                             <input type="checkbox" name="cargo-check" id="cargo-check" class="checkbox-after-element">
                             <label for="cargo-check" style="font-weight: 800 !important;">Kargo Bedava</label>
                         </div>
+                        <!-- Cargo filters end -->
                     </div>
-                    <div class="product-container__productlist">
+                    <!-- Search result filters end -->
+
+                    <!-- Products in the search result will be listed here -->
+                    <div class="product-container-productlist">
+                        <!-- Search result information -->
                         <div class="product-description-part">
                             <div class="description-part">
                                 <p>“Kadın Giyim” araması için 100.000+ sonuç listeleniyor</p>
                             </div>
-                                <select>
-                                    <option value="önerilen">Önerilen</option>
-                                </select>
+                            <select>
+                                <option value="önerilen">Önerilen</option>
+                            </select>
                         </div>
+                        <!-- Search result information end -->
+
+                        <!-- Products will be listed here -->
                         <div class="product-listing">
+                            <!-- Product Card -->
                             <div class="product-card">
                                 <div class="product-image">
-                                    <img class="product-image__content" src="https://cdn.dsmcdn.com//ty107/product/media/images/20210426/11/83045537/15316776/1/1_org.jpg" alt="erkek giyim ornegi"/>
+                                    <img class="product-image-content" src="https://cdn.dsmcdn.com//ty107/product/media/images/20210426/11/83045537/15316776/1/1_org.jpg" alt="erkek giyim ornegi"/>
                                     <div class="product-add-fav">
                                         <svg width="21" height="18" viewBox="0 0 21 18" fill="none" xmlns="http://www.w3.org/2000/svg">
                                             <path fill-rule="evenodd" clip-rule="evenodd" d="M19.383 5.88339C19.383 0.103393 11.131 -0.643608 10.193 5.13539C9.255 -0.643608 1 -0.339607 1 5.88339C1 12.1064 10.193 17.0964 10.193 17.0964C10.193 17.0964 19.383 11.6614 19.383 5.88339Z" stroke="#333333" stroke-width="1.3" stroke-linecap="round" stroke-linejoin="round"/>
@@ -589,14 +607,16 @@
                                         79.99 TL
                                     </div>
                                     <div class="product-alert">
-                                        <span class="sale-alert">Sepette %30 İNDİRİM</span>
-                                        <span class="price-alert">55.90TL</span>
+                                        <span class="product-alert-sale-alert">Sepette %30 İNDİRİM</span>
+                                        <span class="product-alert-price-alert">55.90TL</span>
                                     </div>
                                 </div>
                             </div>
+                            <!-- Product Card ends -->
+                            <!-- Product Card -->
                             <div class="product-card">
                                 <div class="product-image">
-                                    <img class="product-image__content" src="https://cdn.dsmcdn.com//ty107/product/media/images/20210426/11/83045537/15316776/1/1_org.jpg" alt="erkek giyim ornegi"/>
+                                    <img class="product-image-content" src="https://cdn.dsmcdn.com//ty107/product/media/images/20210426/11/83045537/15316776/1/1_org.jpg" alt="erkek giyim ornegi"/>
                                     <div class="product-add-fav">
                                         <svg width="21" height="18" viewBox="0 0 21 18" fill="none" xmlns="http://www.w3.org/2000/svg">
                                             <path fill-rule="evenodd" clip-rule="evenodd" d="M19.383 5.88339C19.383 0.103393 11.131 -0.643608 10.193 5.13539C9.255 -0.643608 1 -0.339607 1 5.88339C1 12.1064 10.193 17.0964 10.193 17.0964C10.193 17.0964 19.383 11.6614 19.383 5.88339Z" stroke="#333333" stroke-width="1.3" stroke-linecap="round" stroke-linejoin="round"/>
@@ -629,14 +649,16 @@
                                         79.99 TL
                                     </div>
                                     <div class="product-alert">
-                                        <span class="sale-alert">Sepette %30 İNDİRİM</span>
-                                        <span class="price-alert">55.90TL</span>
+                                        <span class="product-alert-sale-alert">Sepette %30 İNDİRİM</span>
+                                        <span class="product-alert-price-alert">55.90TL</span>
                                     </div>
                                 </div>
                             </div>
+                            <!-- Product Card ends -->
+                            <!-- Product Card -->
                             <div class="product-card">
                                 <div class="product-image">
-                                    <img class="product-image__content" src="https://cdn.dsmcdn.com//ty107/product/media/images/20210426/11/83045537/15316776/1/1_org.jpg" alt="erkek giyim ornegi"/>
+                                    <img class="product-image-content" src="https://cdn.dsmcdn.com//ty107/product/media/images/20210426/11/83045537/15316776/1/1_org.jpg" alt="erkek giyim ornegi"/>
                                     <div class="product-add-fav">
                                         <svg width="21" height="18" viewBox="0 0 21 18" fill="none" xmlns="http://www.w3.org/2000/svg">
                                             <path fill-rule="evenodd" clip-rule="evenodd" d="M19.383 5.88339C19.383 0.103393 11.131 -0.643608 10.193 5.13539C9.255 -0.643608 1 -0.339607 1 5.88339C1 12.1064 10.193 17.0964 10.193 17.0964C10.193 17.0964 19.383 11.6614 19.383 5.88339Z" stroke="#333333" stroke-width="1.3" stroke-linecap="round" stroke-linejoin="round"/>
@@ -669,13 +691,16 @@
                                         79.99 TL
                                     </div>
                                     <div class="product-alert">
-                                        <span class="sale-alert">Sepette %30 İNDİRİM</span>
-                                        <span class="price-alert">55.90TL</span>
+                                        <span class="product-alert-sale-alert">Sepette %30 İNDİRİM</span>
+                                        <span class="product-alert-price-alert">55.90TL</span>
                                     </div>
                                 </div>
                             </div>
+                            <!-- Product Card ends -->
+                            <!-- Product Card -->
                             <div class="product-card">
                                 <div class="product-image">
+                                    <img class="product-image-content" src="https://cdn.dsmcdn.com//ty107/product/media/images/20210426/11/83045537/15316776/1/1_org.jpg" alt="erkek giyim ornegi"/>
                                     <div class="product-add-fav">
                                         <svg width="21" height="18" viewBox="0 0 21 18" fill="none" xmlns="http://www.w3.org/2000/svg">
                                             <path fill-rule="evenodd" clip-rule="evenodd" d="M19.383 5.88339C19.383 0.103393 11.131 -0.643608 10.193 5.13539C9.255 -0.643608 1 -0.339607 1 5.88339C1 12.1064 10.193 17.0964 10.193 17.0964C10.193 17.0964 19.383 11.6614 19.383 5.88339Z" stroke="#333333" stroke-width="1.3" stroke-linecap="round" stroke-linejoin="round"/>
@@ -708,13 +733,16 @@
                                         79.99 TL
                                     </div>
                                     <div class="product-alert">
-                                        <span class="sale-alert">Sepette %30 İNDİRİM</span>
-                                        <span class="price-alert">55.90TL</span>
+                                        <span class="product-alert-sale-alert">Sepette %30 İNDİRİM</span>
+                                        <span class="product-alert-price-alert">55.90TL</span>
                                     </div>
                                 </div>
                             </div>
+                            <!-- Product Card ends -->
+                            <!-- Product Card -->
                             <div class="product-card">
                                 <div class="product-image">
+                                    <img class="product-image-content" src="https://cdn.dsmcdn.com//ty107/product/media/images/20210426/11/83045537/15316776/1/1_org.jpg" alt="erkek giyim ornegi"/>
                                     <div class="product-add-fav">
                                         <svg width="21" height="18" viewBox="0 0 21 18" fill="none" xmlns="http://www.w3.org/2000/svg">
                                             <path fill-rule="evenodd" clip-rule="evenodd" d="M19.383 5.88339C19.383 0.103393 11.131 -0.643608 10.193 5.13539C9.255 -0.643608 1 -0.339607 1 5.88339C1 12.1064 10.193 17.0964 10.193 17.0964C10.193 17.0964 19.383 11.6614 19.383 5.88339Z" stroke="#333333" stroke-width="1.3" stroke-linecap="round" stroke-linejoin="round"/>
@@ -747,13 +775,16 @@
                                         79.99 TL
                                     </div>
                                     <div class="product-alert">
-                                        <span class="sale-alert">Sepette %30 İNDİRİM</span>
-                                        <span class="price-alert">55.90TL</span>
+                                        <span class="product-alert-sale-alert">Sepette %30 İNDİRİM</span>
+                                        <span class="product-alert-price-alert">55.90TL</span>
                                     </div>
                                 </div>
                             </div>
+                            <!-- Product Card ends -->
+                            <!-- Product Card -->
                             <div class="product-card">
                                 <div class="product-image">
+                                    <img class="product-image-content" src="https://cdn.dsmcdn.com//ty107/product/media/images/20210426/11/83045537/15316776/1/1_org.jpg" alt="erkek giyim ornegi"/>
                                     <div class="product-add-fav">
                                         <svg width="21" height="18" viewBox="0 0 21 18" fill="none" xmlns="http://www.w3.org/2000/svg">
                                             <path fill-rule="evenodd" clip-rule="evenodd" d="M19.383 5.88339C19.383 0.103393 11.131 -0.643608 10.193 5.13539C9.255 -0.643608 1 -0.339607 1 5.88339C1 12.1064 10.193 17.0964 10.193 17.0964C10.193 17.0964 19.383 11.6614 19.383 5.88339Z" stroke="#333333" stroke-width="1.3" stroke-linecap="round" stroke-linejoin="round"/>
@@ -786,13 +817,16 @@
                                         79.99 TL
                                     </div>
                                     <div class="product-alert">
-                                        <span class="sale-alert">Sepette %30 İNDİRİM</span>
-                                        <span class="price-alert">55.90TL</span>
+                                        <span class="product-alert-sale-alert">Sepette %30 İNDİRİM</span>
+                                        <span class="product-alert-price-alert">55.90TL</span>
                                     </div>
                                 </div>
                             </div>
+                            <!-- Product Card ends -->
+                            <!-- Product Card -->
                             <div class="product-card">
                                 <div class="product-image">
+                                    <img class="product-image-content" src="https://cdn.dsmcdn.com//ty107/product/media/images/20210426/11/83045537/15316776/1/1_org.jpg" alt="erkek giyim ornegi"/>
                                     <div class="product-add-fav">
                                         <svg width="21" height="18" viewBox="0 0 21 18" fill="none" xmlns="http://www.w3.org/2000/svg">
                                             <path fill-rule="evenodd" clip-rule="evenodd" d="M19.383 5.88339C19.383 0.103393 11.131 -0.643608 10.193 5.13539C9.255 -0.643608 1 -0.339607 1 5.88339C1 12.1064 10.193 17.0964 10.193 17.0964C10.193 17.0964 19.383 11.6614 19.383 5.88339Z" stroke="#333333" stroke-width="1.3" stroke-linecap="round" stroke-linejoin="round"/>
@@ -825,13 +859,16 @@
                                         79.99 TL
                                     </div>
                                     <div class="product-alert">
-                                        <span class="sale-alert">Sepette %30 İNDİRİM</span>
-                                        <span class="price-alert">55.90TL</span>
+                                        <span class="product-alert-sale-alert">Sepette %30 İNDİRİM</span>
+                                        <span class="product-alert-price-alert">55.90TL</span>
                                     </div>
                                 </div>
                             </div>
+                            <!-- Product Card ends -->
+                            <!-- Product Card -->
                             <div class="product-card">
                                 <div class="product-image">
+                                    <img class="product-image-content" src="https://cdn.dsmcdn.com//ty107/product/media/images/20210426/11/83045537/15316776/1/1_org.jpg" alt="erkek giyim ornegi"/>
                                     <div class="product-add-fav">
                                         <svg width="21" height="18" viewBox="0 0 21 18" fill="none" xmlns="http://www.w3.org/2000/svg">
                                             <path fill-rule="evenodd" clip-rule="evenodd" d="M19.383 5.88339C19.383 0.103393 11.131 -0.643608 10.193 5.13539C9.255 -0.643608 1 -0.339607 1 5.88339C1 12.1064 10.193 17.0964 10.193 17.0964C10.193 17.0964 19.383 11.6614 19.383 5.88339Z" stroke="#333333" stroke-width="1.3" stroke-linecap="round" stroke-linejoin="round"/>
@@ -864,21 +901,22 @@
                                         79.99 TL
                                     </div>
                                     <div class="product-alert">
-                                        <span class="sale-alert">Sepette %30 İNDİRİM</span>
-                                        <span class="price-alert">55.90TL</span>
+                                        <span class="product-alert-sale-alert">Sepette %30 İNDİRİM</span>
+                                        <span class="product-alert-price-alert">55.90TL</span>
                                     </div>
                                 </div>
                             </div>
+                            <!-- Product Card ends -->
                         </div>
+                        <!-- Products end -->
                     </div>
+                    <!-- Products in the search result end -->
                 </div>
             
             </div>
         </main>
+        <!-- Product page content ends -->
     </div>
-    <main>
-        <div class="search-container"></div>
-    </main>
 </body>
 
 </html>
