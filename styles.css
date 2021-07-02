@@ -36,6 +36,18 @@ h4 {
   margin: 0;
 }
 
+#black-out {
+   position: fixed;
+   width: 100%;
+   left: 0;
+   margin-top: 35px;
+   display: none;
+   height: 100%;
+   background-color: #222;
+   opacity: 0.3;
+   z-index: -999;
+}
+
 .top-banner {
   display: block;
   width: 100%;
@@ -226,6 +238,10 @@ header {
   width: 1080px;
   margin: 0 auto;
   position: relative;
+}
+
+.nav:hover > #black-out{
+  display: block;
 }
 
 .main-nav {
