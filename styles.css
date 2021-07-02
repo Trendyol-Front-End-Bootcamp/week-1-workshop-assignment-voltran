@@ -106,15 +106,17 @@ header {
   border-radius: 6px;
   padding: 10px;
   border: 1px solid transparent;
-}
-.search:hover {
-  border: 1px solid var(--primary-color);
   position: relative;
 }
-.search:hover .search-autocomplete {
+.search input[type="search"]:focus ~ .search-autocomplete {
   display: block;
   border: 1px solid var(--primary-color);
 }
+
+.search:focus-within { 
+  border: 1px solid var(--primary-color);
+}
+
 .search input {
   flex: 1;
   background: none;
@@ -126,6 +128,7 @@ header {
   background: none;
   border: none;
 }
+
 /* Search Auto Complete START*/
 .search-autocomplete {
   display: none;
@@ -140,6 +143,7 @@ header {
   padding: 17px 17px 18px 18px;
   z-index: var(--z-dropdown);
 }
+
 .results {
   display: flex;
   flex-direction: column;
